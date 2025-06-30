@@ -206,7 +206,7 @@ a:hover{
     background-image: url("image1.jpg.jpg");
     background-size: cover;
     background-position: center;
-    margin-top: -300px;
+    margin-top: -60px;
     
 }
 .home-img-sm{
@@ -222,12 +222,13 @@ a:hover{
     width: 50vw;
     background-position-x: -100px;
 }
-@media (max-width:1000px){
+@media (max-width:1300px){
     .container-out{
         flex-direction: column;
     }
     .home-img-sm{
         display: block;
+        height :100vh;
     }
     #home-img-lg{
         display: none;
@@ -444,18 +445,20 @@ a:hover{
     .stay-container1{
         margin-bottom: -200px;
     }
-    @media (max-width:1000px){
+    @media (max-width:1200px){
         .section1{
             flex-direction: column;
-            padding: px;
         }
         .stay-container1{
             margin-bottom: 0px;
         }
         .map-frame{
+            display: relative;
+            margin-right: 30px;
             width: 90vw;
             height: 90vw;
-            margin: 5px;
+            margin-top: 10px;
+            /* margin: 5px; */
             margin-left: 10px ;
             padding: 10px;
            
