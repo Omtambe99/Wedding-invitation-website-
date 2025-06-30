@@ -31,12 +31,13 @@ html{
 }
 h1{
     font-size: var(--h1-size);
-    font-weight: 500;
+    font-weight: 600;
     line-height: var(--h1-size);
 }
 h2{
     font-size: var(--h2-size);
     font-weight: bold;
+
 }
 h3{
     font-size: var(--h3-size);
@@ -45,6 +46,7 @@ h3{
 h4{
     font-size: var(--h4-size);
     font-weight: 500;
+    font-size: large;
 }
 .reveal{
     position: relative;
@@ -60,7 +62,13 @@ h4{
 .text{
     font-family: 'Quicksand', sans-serif;
     font-size: var(--text-size);
-    line-height: 1.3rem;
+    line-height: 1.6rem;
+}
+.text1{
+    font-family: 'Quicksand', sans-serif;
+    font-size: var(--text-size);
+    line-height: 1.6rem;
+    margin: 20px 0;
 }
 .huge-btn{
     display: block;
@@ -89,20 +97,24 @@ h4{
 /* <===================NAVBAR===================> */
 
 nav{
-    height: 3vh;
+    height: 12vh;
     width: 100%;
     margin-bottom: 20vh;
+    background-color: rgb(190, 190, 190);
 }
 label.logo{
     font-size: 35px;
     line-height: 80px;
     padding: 0 0 0 30px;
     font-weight: bold;
+    background-color: rgb(190, 190, 190);
+
 }
 nav ul{
     float: right;
     margin-right: 20px;
     list-style: none;
+    
 }
 nav ul li{
     display: inline-block;
@@ -111,15 +123,18 @@ nav ul li{
 }
 nav ul li a{
     font-family: 'Quicksand', sans-serif;
-    font-size: 17px;
+    font-size: 25px;
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
     text-decoration: none;
+    background-color: rgb(234, 231, 231)
+    
 }
 a:hover{
-    color: orange;
+    color: rgb(0, 0, 0);
     transition: .5s;
+    font-weight: bold;
 }
 .checkbtn{
     font-size: 30px;
@@ -185,17 +200,21 @@ a:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
 }
 .home-img{
     background-image: url("image1.jpg.jpg");
     background-size: cover;
     background-position: center;
+    margin-top: -300px;
+    
 }
 .home-img-sm{
     display: none;
     width: 100%;
     margin: 20px 0 0 0;
     height: 50vh;
+
 }
 #home-img-lg{
     display: block;
@@ -313,9 +332,12 @@ a:hover{
 .gallery-img{
     width: 30vw;
     height: 30vw;
-    margin: 10px;
+    margin: 20px;
     background-size: cover;
     background-position: center;
+    border: 4px solid linear-gradient(to right, rgba(154, 45, 45, 0.5), rgba(0, 0, 0, 0.5));
+    border-radius: 30px;
+   
 }
 .gallery-img:nth-child(1){
     background-image: url(pic1.jpg);
@@ -331,12 +353,15 @@ a:hover{
 @media (max-width:1000px){
     .gallery{
         flex-direction: column;
-        padding: 0;
+        padding: 0px;
     }
     .gallery-img{
         width: 100vw;
         height: 90vw;
-        margin: 2px 0;
+        margin: 5px;
+        margin-left: 10px ;
+        padding: 100px;
+       
     }
     .gallery-img:nth-child(2){
         position: relative;
@@ -367,16 +392,76 @@ a:hover{
 
 /* <===================HANDS===================> */
 /* background me jo imgage hai vo */
-.hands{
-    height: 120vh;
-    width: 100%;
-    background-image: url(weddingimage.jpg);
-    background-size: cover;
-    background-position-y: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+.section{
+    display: flex;
+    padding: 20vh 0;
+    justify-content: center;
+    align-items: center;
 }
+.hands{
+  
+    width: 30vw;
+    height: 30vw;
+    margin: 20px;
+    background-size: cover;
+    background-position: center;
+    border: 4px solid linear-gradient(to right, rgba(154, 45, 45, 0.5), rgba(0, 0, 0, 0.5));
+    border-radius: 30px;
 
+}
+@media (max-width:1000px){
+    .section{
+        flex-direction: column;
+        padding: 0px;
+    }
+    .hands{
+        width: 100vw;
+        height: 90vw;
+        margin: 5px;
+        margin-left: 10px ;
+        padding: 10px;
+       
+    }
+    }
+    /* =======MAP======= */
+    .map-frame {
+        width: 700px;
+        height: 400px;
+        display: flex;
+        margin-top: -400px;
+       margin-left: 1000px;
+        padding: 10px;
+        object-position: right;
+        border-radius: 20px;
+    }
+    .section1{
+        display: flex;
+        padding: 20vh 0;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .stay-container1{
+        margin-bottom: -200px;
+    }
+    @media (max-width:1000px){
+        .section1{
+            flex-direction: column;
+            padding: px;
+        }
+        .stay-container1{
+            margin-bottom: 0px;
+        }
+        .map-frame{
+            width: 90vw;
+            height: 90vw;
+            margin: 5px;
+            margin-left: 10px ;
+            padding: 10px;
+           
+        }
+        }
+    
     /* <===================STAY===================> */
     #stay{
         background-color: var(--grey-color);
@@ -423,13 +508,20 @@ a:hover{
     margin: 20px 0;
 }
 .registry-img{
-    display: block;
-    height: 100vh;
-    width: 40vw;
+    /* display: block; */
+    height: 70vh;
+    width: 60vw;
+
     background-image: url(Brother.jpg);
     background-size: cover;
     background-position-y: top;
     background-repeat: no-repeat;
+    background-position: center;
+    object-fit: fill;
+    margin: 10px;
+    border: 4px solid linear-gradient(to right, rgba(154, 45, 45, 0.5), rgba(0, 0, 0, 0.5));
+    border-radius: 30px;
+
     /* background-attachment: fixed; */
 }
 .registry-img-sm{
@@ -466,6 +558,7 @@ a:hover{
 .parting-message h1{
     margin-top: 10vh;
     text-align: center;
+    margin-left: 40px;
 }
 .parting-message button{
     margin:  10vh auto;
@@ -479,8 +572,18 @@ footer{
     width: 100%;
     background-color: var(--grey-color);
     padding: 10vh 30px;
+    text-align: center;
 }
 footer h2{
     font-size: 2Srem;
     font-weight: normal;
+}
+.heart {
+    color: red;
+    text-decoration: none;
+    
+}
+.heart:hover {
+    color: darkred;
+    text-decoration: underline;
 }
