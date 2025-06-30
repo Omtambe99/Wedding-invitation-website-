@@ -41,18 +41,18 @@ To run the project locally:
 
 
 
-##🔮 Future Enhancements
+## 🔮 Future Enhancements
 -Add RSVP form with backend integration
 -Enable countdown timer to the wedding day
 -Integrate image slider/gallery
 -Deploy live on GitHub Pages or Netlify
 
-📍 Live Preview
+## 📍 Live Preview
 🔗 https://omtambe99.github.io/Wedding-invitation-website-/
 
-👤 Author
-Om Tambe
-✨ Front-End Web Developer | Student at IIITA
+## 👤 Author
+**Om Tambe**
+✨  Web Developer | Student at IIITA
 
  ✨ *Feel free to fork, star, or contribute to this project. Feedback and suggestions are welcome!*
 
